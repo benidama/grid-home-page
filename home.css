@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "bg-img bg-img news"
+    "topic description news"
+    "old-pc new-pc games";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 10px;
+  justify-items: center;
+  align-content: center;
+}
+
+.grid-nav {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  gap: 500px;
+}
+.grid-bg-img {
+  grid-area: bg-img;
+  background-image: url(./images/image-web-3-desktop.jpg);
+}
+.grid-header {
+  grid-area: topic;
+}
+.company-news {
+  grid-area: description;
+}
+.grid-message {
+  grid-area: news;
+}
+.grid-old-product {
+  grid-area: old-pc;
+}
+.grid-new-product {
+  grid-area: new-pc;
+}
+.grid-game {
+  grid-area: games;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link,
+.nav-item {
+  display: flex;
+  text-decoration: none;
+}
